@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets//images/favicon.ico" type="image" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Gestion de peliculas</title>
+  </head>
+  <body>
+    <header>
+      <div class="img">
+        <img
+          src="https://i.blogs.es/522d7e/mejoresfantasia2023/450_1000.jpeg"
+          alt="peliculas"
+        />
+      </div>
+      <div class="title">
+        <h1>AÑADIR PELICULAS</h1>
+      </div>
+      <div class="navBar">
+        <a href="../index.html">Inicio</a>
+        <a href="./pages/tecnologia.html">El cine y la tecnología</a>
+        <a href="./pages/donde_ver.html">Cines en medellin</a>
+        <a href="./pages/bootstrap.html">Ejemplo de bootstrap</a>
+        <a href="">Agregar más películas</a>
+      </div>
+    </header>
+    <form id="movieForm">
+      <input type="text" placeholder="Título" id="title" required />
+      <input type="number" placeholder="Año" id="year" required />
+      <input type="text" placeholder="Director" id="director" required />
+      <input
+        type="number"
+        placeholder="Duración (minutos)"
+        id="duration"
+        required
+      />
+      <input type="text" placeholder="Género" id="genre" required />
+      <input
+        type="number"
+        step="any"
+        placeholder="Calificación"
+        id="rate"
+        required
+      />
+      <input type="url" placeholder="URL del póster" id="poster" required />
+      <p>Nota:se puede ingresar mas de un género separado por espacio</p>
+      <input type="submit" />
+      <button type="button" onclick="clearButton()">Limpiar</button>
+    </form>
+    <script>
+      let formulario = document.getElementById("movieForm");
+      const clearButton = () => {
+        formulario.reset();
+      };
+    </script>
+    <script src="../public/bundle.js"></script>
+  </body>
+</html>

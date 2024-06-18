@@ -1,0 +1,22 @@
+body {
+      background-image: url(../assets/images/wallpaperflare.com_wallpaper.jpg);
+    }
+
+.card {
+      width: 15rem;
+      margin: 20px;
+      padding: 15px;
+}
+
+.card img{
+      width: 15rem;
+}
+
+#cards {
+      margin: 20px;
+}
+
+.carousel img {
+      width: 100%;
+      max-height: 700px;
+}
